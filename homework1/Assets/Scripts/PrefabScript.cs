@@ -15,7 +15,7 @@ public class PrefabScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("a")) {
+        if (Input.GetKey("x")) {
             Instantiate(prefabSpawn);
         }
     }
