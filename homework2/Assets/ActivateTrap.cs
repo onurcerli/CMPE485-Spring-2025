@@ -6,17 +6,22 @@ public class ActivateTrap : MonoBehaviour
 {
     public GameObject trapactiveprefab;
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
-        yield return new WaitForSeconds(5);
-        Instantiate(trapactiveprefab, transform.position, transform.rotation);
-        Destroy(this.gameObject);
+        StartCoroutine(Activate());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    IEnumerator Activate()
+    {
+        yield return new WaitForSeconds(5);
+        Instantiate(trapactiveprefab, transform.position, transform.rotation);
+        Destroy(this.gameObject);
     }
 
 }
