@@ -6,17 +6,13 @@ using UnityEngine;
 public class DeactivateTrap : MonoBehaviour
 {
     public GameObject trapinactiveprefab;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Deactivate());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     IEnumerator Deactivate()
     {

@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GuardController : MonoBehaviour
 {
-
     public GameObject player;
     bool forward;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,10 +49,9 @@ public class GuardController : MonoBehaviour
 
     void detectPlayer()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 5)
+        if (Vector3.Distance(transform.position, player.transform.position) < 6)
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
+            SceneManager.LoadScene("GameFailureScene");
         }
     }
 }

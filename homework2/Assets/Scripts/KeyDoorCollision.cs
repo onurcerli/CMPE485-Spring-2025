@@ -23,8 +23,7 @@ public class Keey : MonoBehaviour
     {
         if (collisionInfo.collider.CompareTag("Key"))
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
+            SceneManager.LoadScene("GameCompleteScene");
         }
     }
 

@@ -5,16 +5,11 @@ using UnityEngine;
 public class ActivateTrap : MonoBehaviour
 {
     public GameObject trapactiveprefab;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Activate());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator Activate()

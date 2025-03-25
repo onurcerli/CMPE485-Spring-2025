@@ -6037,6 +6037,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297553667533371224, guid: a173bd2fde7592c45a08444c8fc77508, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6696928936052566065, guid: a173bd2fde7592c45a08444c8fc77508, type: 3}
       propertyPath: m_Name
       value: Drone_Guard Variant
@@ -6087,6 +6091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1988575052, guid: a173bd2fde7592c45a08444c8fc77508, type: 3}
+    - {fileID: 297553667533371224, guid: a173bd2fde7592c45a08444c8fc77508, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -8010,6 +8015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d328fcb015ccd4ca4727217d177133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2100567296}
 --- !u!1 &1744009487 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1575500370602976035, guid: 99e82abb3d1b56a42b855cb62463d564, type: 3}
@@ -9269,6 +9275,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 283151153}
   m_SourcePrefab: {fileID: 100100000, guid: 99e82abb3d1b56a42b855cb62463d564, type: 3}
+--- !u!1 &2100567296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4425428723088313499, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
+  m_PrefabInstance: {fileID: 930335529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2109168587
 PrefabInstance:
   m_ObjectHideFlags: 0
